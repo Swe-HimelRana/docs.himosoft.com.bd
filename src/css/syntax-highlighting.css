@@ -1,0 +1,439 @@
+/* Enhanced Syntax Highlighting for Docusaurus */
+
+/* Import Fira Code font for better code readability */
+@import url('https://fonts.googleapis.com/css2?family=Fira+Code:wght@300;400;500;600;700&display=swap');
+
+/* Base code styling */
+.prism-code {
+  font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', 'Consolas', monospace;
+  font-size: 0.9rem;
+  line-height: 1.6;
+  font-weight: 400;
+  letter-spacing: 0.025em;
+}
+
+/* Bash/Shell specific highlighting */
+.language-bash .token.function,
+.language-shell .token.function,
+.language-sh .token.function,
+.language-zsh .token.function {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-bash .token.keyword,
+.language-shell .token.keyword,
+.language-sh .token.keyword,
+.language-zsh .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-bash .token.string,
+.language-shell .token.string,
+.language-sh .token.string,
+.language-zsh .token.string {
+  color: #032f62;
+}
+
+.language-bash .token.comment,
+.language-shell .token.comment,
+.language-sh .token.comment,
+.language-zsh .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-bash .token.number,
+.language-shell .token.number,
+.language-sh .token.number,
+.language-zsh .token.number {
+  color: #005cc5;
+}
+
+.language-bash .token.operator,
+.language-shell .token.operator,
+.language-sh .token.operator,
+.language-zsh .token.operator {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-bash .token.variable,
+.language-shell .token.variable,
+.language-sh .token.variable,
+.language-zsh .token.variable {
+  color: #e36209;
+}
+
+.language-bash .token.builtin,
+.language-shell .token.builtin,
+.language-sh .token.builtin,
+.language-zsh .token.builtin {
+  color: #6f42c1;
+}
+
+/* PowerShell specific highlighting */
+.language-powershell .token.function {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-powershell .token.string {
+  color: #032f62;
+}
+
+.language-powershell .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-powershell .token.variable {
+  color: #e36209;
+}
+
+.language-powershell .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+/* Dockerfile specific highlighting (using bash highlighting) */
+.language-dockerfile .token.keyword,
+.language-docker .token.keyword,
+.language-bash .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-dockerfile .token.string,
+.language-docker .token.string,
+.language-bash .token.string {
+  color: #032f62;
+}
+
+.language-dockerfile .token.comment,
+.language-docker .token.comment,
+.language-bash .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-dockerfile .token.function,
+.language-docker .token.function,
+.language-bash .token.function {
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+/* YAML specific highlighting */
+.language-yaml .token.key {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-yaml .token.string {
+  color: #032f62;
+}
+
+.language-yaml .token.number {
+  color: #005cc5;
+}
+
+.language-yaml .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-yaml .token.atrule {
+  color: #6f42c1;
+}
+
+/* JSON specific highlighting */
+.language-json .token.property {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-json .token.string {
+  color: #032f62;
+}
+
+.language-json .token.number {
+  color: #005cc5;
+}
+
+.language-json .token.boolean {
+  color: #6f42c1;
+}
+
+.language-json .token.null {
+  color: #6a737d;
+}
+
+/* JavaScript/TypeScript highlighting */
+.language-javascript .token.function,
+.language-typescript .token.function {
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+.language-javascript .token.keyword,
+.language-typescript .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-javascript .token.string,
+.language-typescript .token.string {
+  color: #032f62;
+}
+
+.language-javascript .token.comment,
+.language-typescript .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-javascript .token.number,
+.language-typescript .token.number {
+  color: #005cc5;
+}
+
+/* Python highlighting */
+.language-python .token.function {
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+.language-python .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-python .token.string {
+  color: #032f62;
+}
+
+.language-python .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+.language-python .token.number {
+  color: #005cc5;
+}
+
+/* Go highlighting */
+.language-go .token.function {
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+.language-go .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-go .token.string {
+  color: #032f62;
+}
+
+.language-go .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+/* Rust highlighting */
+.language-rust .token.function {
+  color: #6f42c1;
+  font-weight: 600;
+}
+
+.language-rust .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-rust .token.string {
+  color: #032f62;
+}
+
+.language-rust .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+/* SQL highlighting */
+.language-sql .token.keyword {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-sql .token.string {
+  color: #032f62;
+}
+
+.language-sql .token.number {
+  color: #005cc5;
+}
+
+.language-sql .token.comment {
+  color: #6a737d;
+  font-style: italic;
+}
+
+
+
+/* CSS highlighting */
+.language-css .token.property {
+  color: #d73a49;
+  font-weight: 600;
+}
+
+.language-css .token.string {
+  color: #032f62;
+}
+
+.language-css .token.number {
+  color: #005cc5;
+}
+
+.language-css .token.selector {
+  color: #6f42c1;
+}
+
+/* Dark theme adjustments */
+[data-theme='dark'] .language-bash .token.string,
+[data-theme='dark'] .language-shell .token.string,
+[data-theme='dark'] .language-sh .token.string,
+[data-theme='dark'] .language-zsh .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-bash .token.comment,
+[data-theme='dark'] .language-shell .token.comment,
+[data-theme='dark'] .language-sh .token.comment,
+[data-theme='dark'] .language-zsh .token.comment {
+  color: #6a737d;
+}
+
+[data-theme='dark'] .language-dockerfile .token.string,
+[data-theme='dark'] .language-docker .token.string,
+[data-theme='dark'] .language-bash .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-yaml .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-json .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-powershell .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-javascript .token.string,
+[data-theme='dark'] .language-typescript .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-python .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-go .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-rust .token.string {
+  color: #79b8ff;
+}
+
+[data-theme='dark'] .language-sql .token.string {
+  color: #79b8ff;
+}
+
+
+
+[data-theme='dark'] .language-css .token.string {
+  color: #79b8ff;
+}
+
+/* Code block improvements */
+.theme-code-block {
+  border-radius: 8px;
+  overflow: hidden;
+  margin: 1rem 0;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.theme-code-block pre {
+  margin: 0;
+  padding: 1.25rem;
+  background: transparent;
+}
+
+/* Copy button styling */
+.theme-code-block__copy-button {
+  background-color: rgba(0, 0, 0, 0.1);
+  border: none;
+  border-radius: 4px;
+  color: #666;
+  cursor: pointer;
+  font-size: 0.8rem;
+  padding: 0.25rem 0.5rem;
+  position: absolute;
+  right: 0.5rem;
+  top: 0.5rem;
+  transition: all 0.2s ease;
+  font-family: inherit;
+}
+
+.theme-code-block__copy-button:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  color: #333;
+}
+
+[data-theme='dark'] .theme-code-block__copy-button {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #ccc;
+}
+
+[data-theme='dark'] .theme-code-block__copy-button:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  color: #fff;
+}
+
+/* Language badge */
+.theme-code-block__header {
+  background-color: #f6f8fa;
+  border-bottom: 1px solid #e1e4e8;
+  padding: 0.5rem 1rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  color: #586069;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+[data-theme='dark'] .theme-code-block__header {
+  background-color: #2d3748;
+  border-bottom: 1px solid #4a5568;
+  color: #a0aec0;
+}
+
+/* Inline code styling */
+.theme-code-inline {
+  background-color: rgba(27, 31, 35, 0.05);
+  border-radius: 3px;
+  font-size: 0.85em;
+  padding: 0.2em 0.4em;
+  font-family: 'Fira Code', 'Monaco', 'Menlo', 'Ubuntu Mono', monospace;
+}
+
+[data-theme='dark'] .theme-code-inline {
+  background-color: rgba(255, 255, 255, 0.1);
+} 
