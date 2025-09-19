@@ -42,6 +42,16 @@ const sidebars: SidebarsConfig = {
       items: [
         {
           type: 'category',
+          label: '⚡ Basic Server Commands',
+          items: [
+            'server-administration/basic_server_commands/ssh-key-setup',
+            'server-administration/basic_server_commands/static-ip-configuration',
+            'server-administration/basic_server_commands/network-configuration-refresh',
+            'server-administration/basic_server_commands/network-information-gathering',
+          ],
+        },
+        {
+          type: 'category',
           label: '🌐 Apache HTTP Server',
           items: [
             'server-administration/apache-server/installation',
